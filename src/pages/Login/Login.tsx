@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
-import { login } from "../../actions/authActions";
+import { login, loginVisit } from "../../actions/authActions";
 import { auth } from "../../services/AuthUser";
 
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -14,7 +14,6 @@ function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorLogin, setErrorLogin] = useState(false);
 
   const [signInUserWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
@@ -25,10 +24,15 @@ function Login() {
   const handleInputPasswordChange = (event: any) => {
     setPassword(event.target.value);
   };
+
   const handleLogin = () => {
     signInUserWithEmailAndPassword(email, password);
     dispatch(login(email));
   };
+  const handleVisitLogin = () => {
+    signInUserWithEmailAndPassword("visit@gmail.com", "visitante");
+    dispatch(loginVisit());
+  }
 
   if (error) {
     return (
@@ -73,7 +77,7 @@ function Login() {
         <button className={styles.loginButton} onClick={handleLogin}>
           Entrar
         </button>
-        <button className={styles.loginVisit}>Entre como visitante</button>
+        <button className={styles.loginVisit} onClick={handleVisitLogin}>Entre como visitante</button>
       </div>
     </div>
   );

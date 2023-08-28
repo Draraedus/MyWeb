@@ -9,7 +9,7 @@ const authReducer = (state = { isAuthenticated: false, email: '', isAdmin: false
       case 'LOGINVISIT':
         return {
           isAuthenticated: true,
-          email: action.payload.email,
+          email: "",
           isAdmin: false
         }
       case 'LOGOUT':
