@@ -1,0 +1,18 @@
+.courses_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.courses_container h1 {
+    padding: 3em;
+    font-size: 2.2em;
+    color: #04F06A;
+}
+
+.course_card_container {
+    width: 4em;
+    color: #fff;
+}

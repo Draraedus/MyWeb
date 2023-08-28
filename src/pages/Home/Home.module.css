@@ -1,0 +1,60 @@
+.home_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+}
+
+.home_tittle {
+    text-align: center;
+}
+
+.home_tittle h1 {
+    font-weight: bold;
+    font-size: 3.6em;
+
+    color: #04F06A;
+}
+
+.home_tittle h2 {
+    font-weight: bold;
+    font-size: 2em;
+    font-style: italic;
+    color: #fff;
+}
+
+.home_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.home_about h1 {
+    font-size: 2em;
+    padding-bottom: .7em;
+
+    color: #04F06A;
+}
+
+.home_about div {
+    padding: 3.5em;
+    max-width: 500px;
+}
+
+.home_about img {
+    height: 400px;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.home_info {
+    padding-bottom: .5em;
+    color: #fff;
+}
+
+.home_info span {
+    font-weight: bold;
+}

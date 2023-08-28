@@ -1,0 +1,33 @@
+.navbar_container {
+    background-color: #0E0F19;
+    padding: 1em;
+
+    border-bottom: 1px solid #04F06A;
+}
+
+.navbar_tittle {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #04F06A;
+}
+
+.list {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.item a:hover {
+    color: #04F06A;
+}
