@@ -1,9 +1,17 @@
 import React from 'react'
+import {Navigate} from 'react-router-dom'
+import { useSelector } from 'react-redux';
 
 import styles from './Home.module.css'
 import crow from '../../assets/img/Crow.jpg'
 
 function Home() {
+
+  const isAuthenticated = useSelector((state:any) => state.auth.isAuthenticated);
+
+  if(isAuthenticated === false){
+    return <Navigate to="/"/>
+  }
   return (
     <div className={styles.home_container}>
       <section className={styles.home_tittle}>

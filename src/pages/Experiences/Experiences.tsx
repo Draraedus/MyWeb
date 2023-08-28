@@ -1,8 +1,16 @@
 import React from 'react'
+import {Navigate} from 'react-router-dom'
+import { useSelector } from 'react-redux';
 
 import styles from './Experiences.module.css'
 
 function Experiences() {
+
+  const isAuthenticated = useSelector((state:any) => state.auth.isAuthenticated);
+
+  if(isAuthenticated === false){
+    return <Navigate to="/"/>
+  }
   return (
     <section className={styles.experiences_container}>
       <h1>Minhas Experiências</h1>
