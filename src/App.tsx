@@ -17,7 +17,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login/>}></Route>
-        {/* <Route path="/Home" element={<Home />}></Route> */}
         <Route path="/Home" element={<AuthAndLayoutPageContainer component={<Home />}/>}></Route>
         <Route path="/Experiences" element={<AuthAndLayoutPageContainer component={<Experiences />}/>}></Route>
         <Route path="/Courses" element={<AuthAndLayoutPageContainer component={<Courses />}/>}></Route>
