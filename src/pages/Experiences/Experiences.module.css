@@ -12,7 +12,12 @@
     color: #04F06A;
 }
 
-.experience_card_container {
-    width: 4em;
-    color: #fff;
+.experience_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    width: 100%;
+    padding: 30px;
 }
+

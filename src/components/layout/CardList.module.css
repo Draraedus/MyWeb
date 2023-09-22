@@ -1,0 +1,16 @@
+.card_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+
+    width: 300px;
+    padding: 30px;
+
+    border-radius: 2px;
+
+    background-color: #2d3660;
+
+    color: #fff;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

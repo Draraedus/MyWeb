@@ -7,7 +7,7 @@ import Courses from './pages/Courses/Courses'
 import Experiences from './pages/Experiences/Experiences'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
-import AuthAndLayoutPageContainer from './components/logic/AuthAndLayoutPageContainer'
+import AuthAndLayoutWrapper from './components/logic/AuthAndLayoutWrapper'
 
 
 
@@ -17,11 +17,11 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login/>}></Route>
-        <Route path="/Home" element={<AuthAndLayoutPageContainer component={<Home />}/>}></Route>
-        <Route path="/Experiences" element={<AuthAndLayoutPageContainer component={<Experiences />}/>}></Route>
-        <Route path="/Courses" element={<AuthAndLayoutPageContainer component={<Courses />}/>}></Route>
-        <Route path="/Github" element={<AuthAndLayoutPageContainer component={<Github />}/>}></Route>
-        <Route path="/Contact" element={<AuthAndLayoutPageContainer component={<Contact />}/>}></Route>
+        <Route path="/Home" element={<AuthAndLayoutWrapper component={<Home />}/>}></Route>
+        <Route path="/Experiences" element={<AuthAndLayoutWrapper component={<Experiences />}/>}></Route>
+        <Route path="/Courses" element={<AuthAndLayoutWrapper component={<Courses />}/>}></Route>
+        <Route path="/Github" element={<AuthAndLayoutWrapper component={<Github />}/>}></Route>
+        <Route path="/Contact" element={<AuthAndLayoutWrapper component={<Contact />}/>}></Route>
       </Routes>
     </Router>
   )
