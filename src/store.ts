@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import authReducer from './reducers/authReducer';
+import authReducer from './data/reducers/authReducer';
 
 const reducer = combineReducers({
     auth: authReducer

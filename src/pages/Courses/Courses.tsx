@@ -1,9 +1,7 @@
 import React from 'react'
-import {Navigate} from 'react-router-dom'
-import { useSelector } from 'react-redux';
 
 import styles from './Courses.module.css'
-import CardList from '../../components/layout/CardList';
+import CardList from '../../ui/components/layout/CardList';
 
 function Courses() {
 

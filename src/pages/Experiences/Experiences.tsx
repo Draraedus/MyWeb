@@ -1,16 +1,14 @@
 import React from 'react'
-import {Navigate} from 'react-router-dom'
-import { useSelector } from 'react-redux';
 
 import styles from './Experiences.module.css'
-import CardList from '../../components/layout/CardList';
+import CardList from '../../ui/components/layout/CardList';
 
 function Experiences() {
 
   return (
     <section className={styles.experiences_container}>
       <h1>Minhas Experiências</h1>
-      <ul className={styles.experience_cards_container}>
+      <ul className={styles.experiences_cards_container}>
         <CardList>
           <h3>Cargo: Aprendiz em Serv. Adm.</h3>
           <p>Empresa: Cencosud</p>

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
-import { login, loginVisit } from "../../actions/authActions";
-import { auth } from "../../services/AuthUser";
+import { login, loginVisit } from "../../data/actions/authActions";
+import { auth } from "../../data/services/AuthUserRequest";
+
 
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 

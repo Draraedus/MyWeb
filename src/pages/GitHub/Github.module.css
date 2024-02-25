@@ -1,0 +1,92 @@
+.Github_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+
+    padding: 24px;
+
+    color: #fff;
+}
+
+.Github_info_container {
+    display: flex;
+    column-gap: 12px;
+}
+
+.Github_info_container > button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+
+    padding: 8px;
+
+    border: none;
+    
+    color: #fff;
+    background-color: #0E0F19;
+}
+
+.Github_info_container > button > svg{
+    width: 32px;
+    height: 32px;
+}
+
+.button_icon {
+    display: flex;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.icon {
+background-color: #fff;
+padding: 10px 10px 5px 10px;
+}
+
+.icon svg {
+width: 25px;
+height: 25px;
+}
+
+.cube {
+transition: all 0.4s;
+transform-style: preserve-3d;
+width: 200px;
+height: 20px;
+}
+
+.button_icon:hover {
+border-color: #04F06A;
+}
+
+.button_icon:hover .cube {
+transform: rotateX(90deg);
+}
+
+.side {
+position: absolute;
+height: 47px;
+width: 200px;
+display: flex;
+font-size: 0.8em;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+font-weight: bold;
+}
+
+.top {
+background: #04F06A;
+color: #fff;
+transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+}
+
+.front {
+background: #222229;
+color: #fff;
+transform: translate3d(0, 0, 1em);
+}

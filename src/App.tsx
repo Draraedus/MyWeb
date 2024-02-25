@@ -7,7 +7,7 @@ import Courses from './pages/Courses/Courses'
 import Experiences from './pages/Experiences/Experiences'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
-import AuthAndLayoutWrapper from './components/logic/AuthAndLayoutWrapper'
+import AuthAndLayoutWrapper from './ui/components/logic/AuthAndLayoutWrapper'
 
 
 
