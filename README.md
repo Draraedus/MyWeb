@@ -3,7 +3,7 @@
 Site criado com o intuito de ser um site porfólio onde irei incrementar funcionalidades e tecnologias nele continuamente.
 
 ### Instruções para acessar o site
-Para abrir a URL do site [Clique Aqui]([https://link-url-here.org](https://my-mqje9pguw-draraedus.vercel.app/)https://my-mqje9pguw-draraedus.vercel.app/)
+Para abrir a URL do site [Clique Aqui](https://my-mqje9pguw-draraedus.vercel.app/)
 Em seguida clique em acessar como visitante.
 
 ## Observações
