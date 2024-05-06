@@ -1,18 +1,18 @@
 export const login = (email) => {
-    return {
-      type: 'LOGIN',
-      payload: { email},
-    }
-}
+  return {
+    type: "LOGIN",
+    payload: { email },
+  };
+};
 
 export const loginVisit = () => {
-    return {
-        type: 'LOGINVISIT',
-    }
-}
-  
+  return {
+    type: "LOGINVISIT",
+  };
+};
+
 export const logout = () => {
-    return {
-      type: 'LOGOUT',
-    }
+  return {
+    type: "LOGOUT",
+  };
 };

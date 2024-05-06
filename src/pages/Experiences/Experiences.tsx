@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import styles from './Experiences.module.css'
-import CardList from '../../ui/components/layout/CardList';
+import styles from "./Experiences.module.css";
+import CardList from "../../ui/components/layout/CardList";
 
 function Experiences() {
-
   return (
     <section className={styles.experiences_container}>
       <h1>Minhas Experiências</h1>
@@ -14,11 +13,14 @@ function Experiences() {
           <p>Empresa: Cencosud</p>
           <p>Ínicio: </p>
           <p>Final: Atual</p>
-          <p>Responsabilidades: Auxiliar nas rotinas do dia a dia da área de suporte de campo do setor de TI da empresa.</p>
+          <p>
+            Responsabilidades: Auxiliar nas rotinas do dia a dia da área de
+            suporte de campo do setor de TI da empresa.
+          </p>
         </CardList>
       </ul>
     </section>
-  )
+  );
 }
 
-export default Experiences
+export default Experiences;

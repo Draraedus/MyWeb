@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import styles from './Courses.module.css'
-import CardList from '../../ui/components/layout/CardList';
+import styles from "./Courses.module.css";
+import CardList from "../../ui/components/layout/CardList";
 
 function Courses() {
-
   return (
     <section className={styles.courses_container}>
       <h1>Meus Cursos</h1>
@@ -18,7 +17,7 @@ function Courses() {
         </CardList>
       </ul>
     </section>
-  )
+  );
 }
 
-export default Courses
+export default Courses;

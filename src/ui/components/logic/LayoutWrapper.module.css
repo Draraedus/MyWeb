@@ -1,0 +1,23 @@
+.ContentPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr 80px;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+
+  height: 100vh;
+}
+
+.ContentPage > nav {
+  grid-area: header;
+}
+
+.ContentPage > div {
+  grid-area: content;
+}
+
+.ContentPage > footer {
+  grid-area: footer;
+}

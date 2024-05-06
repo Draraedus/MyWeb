@@ -23,3 +23,7 @@ As tecnologias que estão sendo usadas no momento são:
 * MODULE.CSS
 * REACT-ROUTER
 * AXIOS
+
+
+Branco: #FFFFFF
+Verde: #00FF00

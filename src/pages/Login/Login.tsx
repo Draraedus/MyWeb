@@ -5,7 +5,6 @@ import { useDispatch } from "react-redux";
 import { login, loginVisit } from "../../data/actions/authActions";
 import { auth } from "../../data/services/AuthUserRequest";
 
-
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 import styles from "./Login.module.css";
@@ -33,7 +32,7 @@ function Login() {
   const handleVisitLogin = () => {
     signInUserWithEmailAndPassword("visit@gmail.com", "visitante");
     dispatch(loginVisit());
-  }
+  };
 
   if (error) {
     return (
@@ -60,7 +59,7 @@ function Login() {
   } else if (loading) {
     return <p className={styles.errorMessage}>Loading</p>;
   } else if (user) {
-    return <Navigate to="/home" />;
+    return <Navigate to="/" />;
   }
   return (
     <div className={styles.loginPage}>
@@ -78,7 +77,9 @@ function Login() {
         <button className={styles.loginButton} onClick={handleLogin}>
           Entrar
         </button>
-        <button className={styles.loginVisit} onClick={handleVisitLogin}>Entre como visitante</button>
+        <button className={styles.loginVisit} onClick={handleVisitLogin}>
+          Entre como visitante
+        </button>
       </div>
     </div>
   );

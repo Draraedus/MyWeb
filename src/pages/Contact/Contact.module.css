@@ -1,72 +1,78 @@
 .contact_page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 18px;
 
-    padding-top: 28px;
+  padding-top: 28px;
 
-    color: #fff;
+  color: #fff;
 }
 
 .contact_page > h2 {
-    font-size: 2.2em;
-    color: #04F06A;
+  font-size: 2.2em;
+  color: #04f06a;
 }
 
 .contact_forms_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
 }
 
 .contact_forms_container > label {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
-.contact_forms_container > input , textarea{
-    border: 2px solid transparent;
-    width: 15em;
-    height: 2.5em;
-    padding-left: 0.8em;
-    outline: none;
-    overflow: hidden;
-    background-color: #F3F3F3;
-    border-radius: 10px;
-    transition: all 0.5s;
+.contact_forms_container > input {
+  width: 15em;
+  height: 2.5em;
 }
 
-.contact_forms_container > input:hover,textarea:hover,
-.contact_forms_container > input:focus,textarea:focus {
-border: 2px solid #04F06A;
-box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
-background-color: white;
+.contact_forms_container > input,
+textarea {
+  border: 2px solid transparent;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.contact_forms_container > input:hover,
+textarea:hover,
+.contact_forms_container > input:focus,
+textarea:focus {
+  border: 2px solid #04f06a;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
 }
 
 .contact_forms_container > button {
-    position: relative;
-    display: inline-block;
-    margin: 15px;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: #04F06A;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid #04F06A;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #04F06A;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #04f06a;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #04f06a;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #04f06a;
 }
-  
+
 .contact_forms_container > button:hover {
-color: white;
-box-shadow: inset 0 -100px 0 0 #04F06A;
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #04f06a;
 }
 
 .contact_forms_container > button:active {
-transform: scale(0.9);
+  transform: scale(0.9);
 }
